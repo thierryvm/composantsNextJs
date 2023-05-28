@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}",],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
@@ -9,6 +9,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('@tailwindcss/container-queries'),
     // ...
   ],
-}
+};

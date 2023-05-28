@@ -1,39 +1,29 @@
-# This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Voici une explication de chaque dossier et fichier :
 
-## Getting Started
+.next/ : Ce dossier est généré automatiquement lorsque vous exécutez votre application en mode développement ou lorsque vous construisez votre application pour la production. Il contient des fichiers compilés et ne doit pas être modifié manuellement ou inclus dans votre dépôt git.
 
-First, run the development server:
+node_modules/ : Ce dossier contient toutes les dépendances de votre projet installées via npm. Il ne doit pas non plus être inclus dans votre dépôt git.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+public/ : Ce dossier contient tous les fichiers statiques que vous voulez servir directement, comme des images ou des icônes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+src/ : Ce dossier contient le code source de votre application.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+components/ : Ce dossier contient tous les composants React que vous créez. Vous pouvez organiser vos composants dans des sous-dossiers comme vous l'avez suggéré précédemment.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+pages/ : Ce dossier contient toutes vos pages. Chaque fichier dans ce dossier devient une route automatiquement.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+\_app.tsx : Ce fichier est un composant de niveau supérieur qui est chargé une fois au début, et qui englobe toutes les autres pages. Vous pouvez utiliser ce fichier pour ajouter des fonctionnalités globales à votre application, comme la configuration de Firebase.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+api/ : Ce sous-dossier est spécial dans Next.js. Tous les fichiers à l'intérieur de ce dossier sont traités comme des endpoints API, et non comme des pages.
 
-## Learn More
+styles/ : Ce dossier contient tous vos styles globaux.
 
-To learn more about Next.js, take a look at the following resources:
+.gitignore : Ce fichier dit à git quels fichiers ou dossiers il doit ignorer.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+package.json : Ce fichier contient une liste de toutes les dépendances de votre projet et d'autres informations sur votre projet.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+README.md : Ce fichier est utilisé pour documenter votre projet. Vous pouvez y expliquer ce que fait votre projet, comment l'installer et l'utiliser, etc.
 
-## Deploy on Vercel
+tailwind.config.js : Ce fichier est utilisé pour configurer Tailwind CSS. Vous pouvez y ajouter des couleurs personnalisées, des variantes, des plugins, etc.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# composantsNextJs
+tsconfig.json : Ce fichier est utilisé pour configurer TypeScript.
